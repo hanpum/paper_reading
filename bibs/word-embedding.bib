@@ -41,6 +41,25 @@
   keywords =	 {word-emb,poly}
 }
 
+@inproceedings{baroni-2014-dont,
+  title =	 "Don{'}t count, predict! A systematic comparison of
+                  context-counting vs. context-predicting semantic
+                  vectors",
+  author =	 "Baroni, Marco and Dinu, Georgiana and Kruszewski,
+                  Germ{\'a}n",
+  booktitle =	 "Proceedings of the 52nd Annual Meeting of the
+                  Association for Computational Linguistics (Volume 1:
+                  Long Papers)",
+  month =	 jun,
+  year =	 2014,
+  address =	 "Baltimore, Maryland",
+  publisher =	 "Association for Computational Linguistics",
+  url =		 "https://www.aclweb.org/anthology/P14-1023",
+  doi =		 "10.3115/v1/P14-1023",
+  pages =	 "238--247",
+  keywords = {word-emb,evaluation}
+}
+
 @article{bojanowski-2016-enric-word,
   author =	 {Bojanowski, Piotr and Grave, Edouard and Joulin,
                   Armand and Mikolov, Tomas},
@@ -73,6 +92,29 @@
   eprint =	 {1607.04606},
   primaryClass = {cs.CL},
   keywords =	 {fasttext,train}
+}
+
+@article{brown-2020-languag-model,
+  author =	 {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and
+                  Subbiah, Melanie and Kaplan, Jared and Dhariwal,
+                  Prafulla and Neelakantan, Arvind and Shyam, Pranav
+                  and Sastry, Girish and Askell, Amanda and Agarwal,
+                  Sandhini and Herbert-Voss, Ariel and Krueger,
+                  Gretchen and Henighan, Tom and Child, Rewon and
+                  Ramesh, Aditya and Ziegler, Daniel M. and Wu,
+                  Jeffrey and Winter, Clemens and Hesse, Christopher
+                  and Chen, Mark and Sigler, Eric and Litwin, Mateusz
+                  and Gray, Scott and Chess, Benjamin and Clark, Jack
+                  and Berner, Christopher and McCandlish, Sam and
+                  Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+  title =	 {Language Models Are Few-Shot Learners},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2005.14165v1},
+  archivePrefix ={arXiv},
+  eprint =	 {2005.14165},
+  primaryClass = {cs.CL},
+  keywords =	 {gpt3}
 }
 
 @article{grave-2018-learn-word,
@@ -245,61 +287,28 @@
 }
 
 @inproceedings{pennington-2014-glove,
-  author =	 {Jeffrey Pennington and Richard Socher and
-                  Christopher Manning},
-  title =	 {Glove: Global Vectors for Word Representation},
-  booktitle =	 {Proceedings of the 2014 Conference on Empirical
-                  Methods in Natural Language Processing (EMNLP)},
+  author =	 {Pennington, Jeffrey and Socher, Richard and Manning,
+                  Christopher D},
+  title =	 {Glove: Global vectors for word representation},
+  booktitle =	 {Proceedings of the 2014 conference on empirical
+                  methods in natural language processing (EMNLP)},
   year =	 2014,
-  pages =	 {nil},
+  pages =	 {1532--1543},
   doi =		 {10.3115/v1/d14-1162},
-  url =		 {http://doi.org/10.3115/v1/d14-1162},
-  DATE_ADDED =	 {Wed Apr 29 22:34:00 2020},
-  month =	 {-},
-  abstract =	 {Recent methods for learning vector space
-                  representations of words have succeeded in capturing
-                  fine-grained semantic and syntactic regularities
-                  using vector arith- metic, but the origin of these
-                  regularities has remained opaque. We analyze and
-                  make explicit the model properties needed for such
-                  regularities to emerge in word vectors. The result
-                  is a new global log- bilinear regression model that
-                  combines the advantages of the two major model
-                  families in the literature: global matrix
-                  factorization and local context window methods. Our
-                  model efficiently leverages statistical information
-                  by training only on the nonzero elements in a
-                  word-word co-occurrence matrix, rather than on the
-                  en- tire sparse matrix or on individual context
-                  windows in a large corpus. The model produces a
-                  vector space with meaningful sub-structure, as
-                  evidenced by its performance of 75\% on a recent
-                  word analogy task. It also outperforms related
-                  models on similarity tasks and named entity
-                  recognition.}
+  url =		 {https://doi.org/10.3115/v1/d14-1162},
+  keywords =	 {glove},
 }
 
-@inproceedings{schnabel-2015-evaluat,
-  title =	 {Evaluation methods for unsupervised word embeddings},
-  author =	 {Schnabel, Tobias and Labutov, Igor and Mimno, David
-                  and Joachims, Thorsten},
-  booktitle =	 {Proceedings of the 2015 conference on empirical
-                  methods in natural language processing},
-  pages =	 {298--307},
-  year =	 2015,
-  keywords =	 {embedding,evaluate}
-}
-
-@article{radford-2018-improv,
-  title =	 {Improving language understanding by generative
-                  pre-training},
+@article{radford-2018-improv-languag,
   author =	 {Radford, Alec and Narasimhan, Karthik and Salimans,
                   Tim and Sutskever, Ilya},
-  journal =	 {URL
-                  https://s3-us-west-2. amazonaws. com/openai-assets/researchcovers/languageunsupervised/language
+  title =	 {Improving Language Understanding By Generative
+                  Pre-Training},
+  journal =
+                  {https://s3-us-west-2. amazonaws. com/openai-assets/researchcovers/languageunsupervised/language
                   understanding paper. pdf},
   year =	 2018,
-  keywords =	 {gpt}
+  keywords =	 {gpt},
 }
 
 @article{radford-2019-languag,
@@ -315,25 +324,16 @@
   url =		 {https://github.com/openai/gpt-2}
 }
 
-@article{brown-2020-languag-model,
-  author =	 {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and
-                  Subbiah, Melanie and Kaplan, Jared and Dhariwal,
-                  Prafulla and Neelakantan, Arvind and Shyam, Pranav
-                  and Sastry, Girish and Askell, Amanda and Agarwal,
-                  Sandhini and Herbert-Voss, Ariel and Krueger,
-                  Gretchen and Henighan, Tom and Child, Rewon and
-                  Ramesh, Aditya and Ziegler, Daniel M. and Wu,
-                  Jeffrey and Winter, Clemens and Hesse, Christopher
-                  and Chen, Mark and Sigler, Eric and Litwin, Mateusz
-                  and Gray, Scott and Chess, Benjamin and Clark, Jack
-                  and Berner, Christopher and McCandlish, Sam and
-                  Radford, Alec and Sutskever, Ilya and Amodei, Dario},
-  title =	 {Language Models Are Few-Shot Learners},
-  journal =	 {CoRR},
-  year =	 2020,
-  url =		 {http://arxiv.org/abs/2005.14165v1},
-  archivePrefix ={arXiv},
-  eprint =	 {2005.14165},
-  primaryClass = {cs.CL},
-  keywords =	 {gpt3}
+@inproceedings{schnabel-2015-evaluat,
+  author =	 {Schnabel, Tobias and Labutov, Igor and Mimno, David
+                  and Joachims, Thorsten},
+  title =	 {Evaluation methods for unsupervised word embeddings},
+  booktitle =	 {Proceedings of the 2015 conference on empirical
+                  methods in natural language processing},
+  year =	 2015,
+  pages =	 {298--307},
+  url =
+                  {https://www.cs.cornell.edu/~schnabts/downloads/schnabel2015embeddings.pdf},
+  keywords =	 {embedding,evaluation},
 }
+
