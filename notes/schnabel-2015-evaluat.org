@@ -1,3 +1,40 @@
-* CONTRIBUTIONS
-* DETAILS
-* PROBLEMS
+* what's problem
+  1. ~word-embedding~ 的评估分析
+  2. 当前的评估方式是给定一个 ~query word~ , 然后对剩下的所有单词计算
+     一个 ~global gloden rank~ , 但是，这种做法比较粗糙，同一个
+     ~embedding~ 编码了单词的多种含义，不同含义之间的相似度可能不在一
+     个级别。
+
+* solutions
+  1. 更精细化的选择 ~query word~ , 按照不同的类别进行比较分析
+  2. 提出一个 ~comparative intrinsic evaluation~ , 这一点其实还好，算
+     不上创新，比较 ~normal~ 的一个做法
+     
+* results
+  1. 发现在不同的 ~category~ 下，不同的 ~word embedding~ 的性能是不一
+     致的，不存在绝对优势的 ~embedding~
+  2. ~intrinsic/extrinsic task~ 下都观察到这个现象
+  3. ~frequency~ 和 ~NN rank~ 之间存在线性关系
+     - 针对 ~Word-Sim 353~ 任务中的每个单词，计算其 ~top 1k~ 近邻(~cos similarity~)
+     - 统计 ~top 1k~ 中单词在训练语料的词频
+     - 对 ~NN rank~ 每个位置 $NN_{i}$ 对应单词的词频求平均 $freq_{i}$
+     - 结论: $log\ NN_{i}$ 和  $freq_{i}$ 成线性关系
+  
+* any new idea
+  1. ~frequency~ 和 ~NN rank~ 之间的线性关系
+  
+* limitation
+  1. 样本量有限 (100个)
+  2. ~embedding~ 技术比较少，更多的参与比较？
+  
+* tips
+  1. absolute intrinsic evaluation VS comparative intrinsic
+     evaluation, 是否能够解释为什么 ~analogy~ 计算的两个词的差？
+  2. 样本采集方式 (这个在另外一篇 ~paper~ 中也用到了)
+     - 词性
+     - POS
+     - 具体/抽象
+     - 词频
+
+* what's next
+  1. 线性关系是否可以进一步分析用来优化问题

@@ -1,0 +1,15 @@
+#+TITLE: Notes on: ${author-or-editor} (${year}): ${title}
+
+* PROBLEM
+
+* SOLUTIONS
+
+* RESULTS
+
+* NEW IDEA
+
+* LIMITATIONS/EXTENSIONS
+
+* TIPS
+
+* WHAT'S NEXT
