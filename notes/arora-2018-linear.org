@@ -1,0 +1,2 @@
+* CONTRIBUTIONS
+  1. 多义在同一个 ~vector~ 中简单的线性叠加

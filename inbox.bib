@@ -1,0 +1,189 @@
+@article{takanobu-2020-multi-agent,
+  author =	 {Takanobu, Ryuichi and Liang, Runze and Huang,
+                  Minlie},
+  title =	 {Multi-Agent Task-Oriented Dialog Policy Learning
+                  With Role-Aware Reward Decomposition},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2004.03809v2},
+  abstract =	 {Many studies have applied reinforcement learning to
+                  train a dialog policy and show great promise these
+                  years. One common approach is to employ a user
+                  simulator to obtain a large number of simulated user
+                  experiences for reinforcement learning
+                  algorithms. However, modeling a realistic user
+                  simulator is challenging. A rule-based simulator
+                  requires heavy domain expertise for complex tasks,
+                  and a data-driven simulator requires considerable
+                  data and it is even unclear how to evaluate a
+                  simulator. To avoid explicitly building a user
+                  simulator beforehand, we propose Multi-Agent Dialog
+                  Policy Learning, which regards both the system and
+                  the user as the dialog agents. Two agents interact
+                  with each other and are jointly learned
+                  simultaneously. The method uses the actor-critic
+                  framework to facilitate pretraining and improve
+                  scalability. We also propose Hybrid Value Network
+                  for the role-aware reward decomposition to integrate
+                  role-specific domain knowledge of each agent in the
+                  task-oriented dialog. Results show that our method
+                  can successfully build a system policy and a user
+                  policy simultaneously, and two agents can achieve a
+                  high task success rate through conversational
+                  interaction.},
+  archivePrefix ={arXiv},
+  eprint =	 {2004.03809},
+  primaryClass = {cs.CL},
+  keywords =	 {sds}
+}
+
+@article{zhou-2020-kdcon,
+  author =	 {Zhou, Hao and Zheng, Chujie and Huang, Kaili and
+                  Huang, Minlie and Zhu, Xiaoyan},
+  title =	 {Kdconv: a Chinese Multi-Domain Dialogue Dataset
+                  Towards Multi-Turn Knowledge-Driven Conversation},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2004.04100v1},
+  abstract =	 {The research of knowledge-driven conversational
+                  systems is largely limited due to the lack of dialog
+                  data which consist of multi-turn conversations on
+                  multiple topics and with knowledge annotations. In
+                  this paper, we propose a Chinese multi-domain
+                  knowledge-driven conversation dataset, KdConv, which
+                  grounds the topics in multi-turn conversations to
+                  knowledge graphs. Our corpus contains 4.5K
+                  conversations from three domains (film, music, and
+                  travel), and 86K utterances with an average turn
+                  number of 19.0. These conversations contain in-depth
+                  discussions on related topics and natural transition
+                  between multiple topics. To facilitate the following
+                  research on this corpus, we provide several
+                  benchmark models. Comparative results show that the
+                  models can be enhanced by introducing background
+                  knowledge, yet there is still a large space for
+                  leveraging knowledge to model multi-turn
+                  conversations for further research.  Results also
+                  show that there are obvious performance differences
+                  between different domains, indicating that it is
+                  worth to further explore transfer learning and
+                  domain adaptation. The corpus and benchmark models
+                  are publicly available.},
+  archivePrefix ={arXiv},
+  eprint =	 {2004.04100},
+  primaryClass = {cs.CL},
+  keywords =	 {sds,data}
+}
+
+@article{niu-2020-self-train,
+  author =	 {Niu, Yilin and Jiao, Fangkai and Zhou, Mantong and
+                  Yao, Ting and Xu, Jingfang and Huang, Minlie},
+  title =	 {A Self-Training Method for Machine Reading
+                  Comprehension With Soft Evidence Extraction},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2005.05189v1},
+  abstract =	 {Neural models have achieved great success on machine
+                  reading comprehension (MRC), many of which typically
+                  consist of two components: an evidence extractor and
+                  an answer predictor. The former seeks the most
+                  relevant information from a reference text, while
+                  the latter is to locate or generate answers from the
+                  extracted evidence. Despite the importance of
+                  evidence labels for training the evidence extractor,
+                  they are not cheaply accessible, particularly in
+                  many non-extractive MRC tasks such as YES/NO
+                  question answering and multi-choice MRC.  To address
+                  this problem, we present a Self-Training method
+                  (STM), which supervises the evidence extractor with
+                  auto-generated evidence labels in an iterative
+                  process. At each iteration, a base MRC model is
+                  trained with golden answers and noisy evidence
+                  labels. The trained model will predict pseudo
+                  evidence labels as extra supervision in the next
+                  iteration. We evaluate STM on seven datasets over
+                  three MRC tasks. Experimental results demonstrate
+                  the improvement on existing MRC models, and we also
+                  analyze how and why such a self-training method
+                  works in MRC.},
+  archivePrefix ={arXiv},
+  eprint =	 {2005.05189},
+  primaryClass = {cs.CL},
+}
+
+@article{zhu-2020-convl,
+  author =	 {Zhu, Qi and Zhang, Zheng and Fang, Yan and Li, Xiang
+                  and Takanobu, Ryuichi and Li, Jinchao and Peng,
+                  Baolin and Gao, Jianfeng and Zhu, Xiaoyan and Huang,
+                  Minlie},
+  title =	 {Convlab-2: an Open-Source Toolkit for Building,
+                  Evaluating, and Diagnosing Dialogue Systems},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2002.04793v2},
+  abstract =	 {We present ConvLab-2, an open-source toolkit that
+                  enables researchers to build task-oriented dialogue
+                  systems with state-of-the-art models, perform an
+                  end-to-end evaluation, and diagnose the weakness of
+                  systems. As the successor of ConvLab (Lee et al.,
+                  2019b), ConvLab-2 inherits ConvLab's framework but
+                  integrates more powerful dialogue models and
+                  supports more datasets. Besides, we have developed
+                  an analysis tool and an interactive tool to assist
+                  researchers in diagnosing dialogue systems. The
+                  analysis tool presents rich statistics and
+                  summarizes common mistakes from simulated dialogues,
+                  which facilitates error analysis and system
+                  improvement. The interactive tool provides a user
+                  interface that allows developers to diagnose an
+                  assembled dialogue system by interacting with the
+                  system and modifying the output of each system
+                  component.},
+  archivePrefix ={arXiv},
+  eprint =	 {2002.04793},
+  primaryClass = {cs.CL},
+  keywords =	 {sds,framework}
+}
+
+@article{hedayatnia-2020-polic-driven,
+  author =	 {Hedayatnia, Behnam and Kim, Seokhwan and Liu, Yang
+                  and Gopalakrishnan, Karthik and Eric, Mihail and
+                  Hakkani-Tur, Dilek},
+  title =	 {Policy-Driven Neural Response Generation for
+                  Knowledge-Grounded Dialogue Systems},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2005.12529v1},
+  abstract =	 {Open-domain dialogue systems aim to generate
+                  relevant, informative and engaging
+                  responses. Seq2seq neural response generation
+                  approaches do not have explicit mechanisms to
+                  control the content or style of the generated
+                  response, and frequently result in uninformative
+                  utterances. In this paper, we propose using a
+                  dialogue policy to plan the content and style of
+                  target responses in the form of an action plan,
+                  which includes knowledge sentences related to the
+                  dialogue context, targeted dialogue acts, topic
+                  information, etc. The attributes within the action
+                  plan are obtained by automatically annotating the
+                  publicly released Topical-Chat dataset. We condition
+                  neural response generators on the action plan which
+                  is then realized as target utterances at the turn
+                  and sentence levels. We also investigate different
+                  dialogue policy models to predict an action plan
+                  given the dialogue context. Through automated and
+                  human evaluation, we measure the appropriateness of
+                  the generated responses and check if the generation
+                  models indeed learn to realize the given action
+                  plans. We demonstrate that a basic dialogue policy
+                  that operates at the sentence level generates better
+                  responses in comparison to turn level generation as
+                  well as baseline models with no action
+                  plan. Additionally the basic dialogue policy has the
+                  added effect of controllability.},
+  archivePrefix ={arXiv},
+  eprint =	 {2005.12529},
+  primaryClass = {cs.AI},
+  keywords =	 {nlg}
+}

@@ -1,0 +1,22 @@
+如何在不影响性能的前提下减小模型大小
+
+* contribution
+  1. two orders of magnitude less memory than fasttext
+  2. features:
+     - feature pruning
+     - quantization
+     - hashing
+     - retraining
+  3. model size less than 100kB
+     
+* details
+** Product quantization
+** re-trainin
+** vocabulary pruning 
+** Hashing trick
+** Bloom filter
+  
+
+* problems
+  1. what is rank constraint
+     

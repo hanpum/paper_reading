@@ -1,0 +1,8 @@
+* Problems 
+  - NCE 和 negative sampling的区别是什么
+    
+* 出发点
+  
+* NCE
+  
+* Negative Sampling

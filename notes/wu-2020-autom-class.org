@@ -1,0 +1,2 @@
+#+TITLE: Notes on: Wu, J., Harrison, C., Bigham, J. P., & Laput, G. (2020): Automated class discovery and one-shot interactions for acoustic activity recognition
+

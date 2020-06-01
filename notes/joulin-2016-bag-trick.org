@@ -1,0 +1,34 @@
+#+TITLE: Notes on: Joulin, A., Grave, E., Bojanowski, P., & Mikolov, T. (2016): Bag of tricks for efficient text classification
+
+* CONTRIBUTIONS
+  *ADVANTAGES*
+  1. 提出了一个快速的文本分类模型
+  2. 速度比 ~nn~ 要快很多
+
+  *DRAWBACKS*
+  1. 表达能力有限, 不过在文本分类任务上足以满足要求
+
+* DETAILS
+** model architecture
+   1. ~skip-gram~ 模型的变体, 增加了一些 ~features~
+   2. ~sub-gram word-vector~
+   3. ~n-gram character level ngram~ , 使用 ~hash~ 来表示, 详见 ~PROBLEM.3~
+
+** model parameters
+   同 ~word2vec~ 训练
+
+** optimization method
+   sgd
+
+* PROBLEMS
+  1. 词向量是从头开始训练还是直接使用已有的
+     从头开始训练
+
+  2. 词向量是 ~word2vec~ 还是 ~sub-word-vector~
+     后者
+
+  3. ~n-gram~ 怎么使用
+     比较巧妙，不是直接使用 ~n-gram~, 而是利用中心词和 ~context word~
+     做一个 ~hash~ 运算，将其映射到 ~sub-word~ 对应的区域, 也就是
+     ~sub-word~ 中的每个单词不仅仅表示 ~sub-word-ngram vector~ , 同时
+     也表示 ~word-level-ngram feature~

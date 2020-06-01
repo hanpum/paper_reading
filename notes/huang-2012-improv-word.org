@@ -1,0 +1,38 @@
+* CONTIRUBTION
+  1. learns word embeddings that better capture the semantics of words by incorporating both local and global document context
+  2. accounts for homonymy and polysemy by learning multiple embeddings per word
+  3. [[http://www-nlp.stanford.edu/~ehhuang/SCWS.zip][dataset]]
+
+* [4/5] DETAILS
+** DONE local context
+   1. 类似于 ~skip-gram~
+   2. 固定窗口， ~concate~ 窗口内的词向量即可得到 ~local input~
+   3. 只考虑 ~left history~
+
+** TODO gloal context
+   没太看明白
+
+** DONE loss
+   1. 类似于 ~negative sampling~ , 不过只有一个负例
+   2. ~mini-batched-sgd~
+
+** DONE multi-prototypes
+   1. 训练得到单义的词向量
+   2. 根据 ~context~ 进行聚类，区分多义单词
+   3. 标记多义单词
+   4. 重新训练词向量
+
+** DONE 如果单词有多个 ~embedding~ , 如何确定应该使用哪个
+   两种方法:
+   1. 直接求平均
+   2. 根据上下文计算属于每一个类的概率，然后加权平均, 计算比较复杂, 性
+      能要好于直接求平均
+
+      
+** TODO 测试集的构造
+   构造了一个带上下文的同义词数据集，通过上下文来判断两个词的含义是否接近
+   1. 将单词按照三个属性进行分类, 这样分别采样可以覆盖整个样本集
+      - 出现概率
+      - 同义词个数
+      - ~postag~ 个数
+   2. 单词采样

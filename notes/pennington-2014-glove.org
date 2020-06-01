@@ -1,0 +1,7 @@
+* problems
+  1. global matrix factorization: LSA, work poorly on word analogy task
+  2. local context window: poorly use of corpus statistics
+
+     
+* innovation
+  1. analog the properties of linear direction meaning

@@ -1,0 +1,339 @@
+@article{arora-2016-latent,
+  title =	 {A latent variable model approach to pmi-based word
+                  embeddings},
+  author =	 {Arora, Sanjeev and Li, Yuanzhi and Liang, Yingyu and
+                  Ma, Tengyu and Risteski, Andrej},
+  journal =	 {Transactions of the Association for Computational
+                  Linguistics},
+  volume =	 4,
+  pages =	 {385--399},
+  year =	 2016,
+  doi =		 {10.1162/tacl_a_00106},
+  url =		 {https://www.aclweb.org/anthology/Q16-1028},
+  publisher =	 {MIT Press}
+}
+
+@conference{arora-2017-simple,
+  title =	 {A simple but tough-to-beat baseline for sentence
+                  embeddings},
+  author =	 {Sanjeev Arora and Yingyu Liang and Tengyu Ma},
+  year =	 2017,
+  month =	 jan,
+  day =		 1,
+  language =	 {English (US)},
+  booktitle =	 {Proceedings of 2017 International Conference on
+                  Learning Representations},
+  keywords =	 {sentence-emb},
+  url =		 {https://github.com/PrincetonML/SIF}
+}
+
+@article{arora-2018-linear,
+  title =	 {Linear algebraic structure of word senses, with
+                  applications to polysemy},
+  author =	 {Arora, Sanjeev and Li, Yuanzhi and Liang, Yingyu and
+                  Ma, Tengyu and Risteski, Andrej},
+  journal =	 {Transactions of the Association for Computational
+                  Linguistics},
+  volume =	 6,
+  pages =	 {483--495},
+  year =	 2018,
+  publisher =	 {MIT Press},
+  keywords =	 {word-emb,poly}
+}
+
+@article{bojanowski-2016-enric-word,
+  author =	 {Bojanowski, Piotr and Grave, Edouard and Joulin,
+                  Armand and Mikolov, Tomas},
+  title =	 {Enriching Word Vectors With Subword Information},
+  journal =	 {CoRR},
+  year =	 2016,
+  url =		 {http://arxiv.org/abs/1607.04606v2},
+  abstract =	 {Continuous word representations, trained on large
+                  unlabeled corpora are useful for many natural
+                  language processing tasks. Popular models that learn
+                  such representations ignore the morphology of words,
+                  by assigning a distinct vector to each word. This is
+                  a limitation, especially for languages with large
+                  vocabularies and many rare words. In this paper, we
+                  propose a new approach based on the skipgram model,
+                  where each word is represented as a bag of character
+                  $n$-grams. A vector representation is associated to
+                  each character $n$-gram; words being represented as
+                  the sum of these representations. Our method is
+                  fast, allowing to train models on large corpora
+                  quickly and allows us to compute word
+                  representations for words that did not appear in the
+                  training data. We evaluate our word representations
+                  on nine different languages, both on word similarity
+                  and analogy tasks. By comparing to recently proposed
+                  morphological word representations, we show that our
+                  vectors achieve state-of-the-art performance on
+                  these tasks.},
+  archivePrefix ={arXiv},
+  eprint =	 {1607.04606},
+  primaryClass = {cs.CL},
+  keywords =	 {fasttext,train}
+}
+
+@article{grave-2018-learn-word,
+  author =	 {Grave, Edouard and Bojanowski, Piotr and Gupta,
+                  Prakhar and Joulin, Armand and Mikolov, Tomas},
+  title =	 {Learning Word Vectors for 157 Languages},
+  journal =	 {CoRR},
+  year =	 2018,
+  url =		 {http://arxiv.org/abs/1802.06893v2},
+  abstract =	 {Distributed word representations, or word vectors,
+                  have recently been applied to many tasks in natural
+                  language processing, leading to state-of-the-art
+                  performance. A key ingredient to the successful
+                  application of these representations is to train
+                  them on very large corpora, and use these
+                  pre-trained models in downstream tasks. In this
+                  paper, we describe how we trained such high quality
+                  word representations for 157 languages. We used two
+                  sources of data to train these models: the free
+                  online encyclopedia Wikipedia and data from the
+                  common crawl project. We also introduce three new
+                  word analogy datasets to evaluate these word
+                  vectors, for French, Hindi and Polish.  Finally, we
+                  evaluate our pre-trained word vectors on 10
+                  languages for which evaluation datasets exists,
+                  showing very strong performance compared to previous
+                  models.},
+  archivePrefix ={arXiv},
+  eprint =	 {1802.06893},
+  primaryClass = {cs.CL},
+  keywords =	 {fasttext}
+}
+
+@inproceedings{huang-2012-improv-word,
+  title =	 {Improving Word Representations via Global Context
+                  and Multiple Word Prototypes},
+  author =	 {Huang, Eric and Socher, Richard and Manning,
+                  Christopher and Ng, Andrew},
+  booktitle =	 {Proceedings of the 50th Annual Meeting of the
+                  Association for Computational Linguistics (Volume 1:
+                  Long Papers)},
+  month =	 jul,
+  year =	 2012,
+  address =	 {Jeju Island, Korea},
+  publisher =	 {Association for Computational Linguistics},
+  url =		 {https://www.aclweb.org/anthology/P12-1092},
+  pages =	 {873--882},
+  keywords =	 {word-emb,poly}
+}
+
+@article{joulin-2016-bag-trick,
+  author =	 {Joulin, Armand and Grave, Edouard and Bojanowski,
+                  Piotr and Mikolov, Tomas},
+  title =	 {Bag of Tricks for Efficient Text Classification},
+  journal =	 {CoRR},
+  year =	 2016,
+  url =		 {http://arxiv.org/abs/1607.01759v3},
+  abstract =	 {This paper explores a simple and efficient baseline
+                  for text classification.  Our experiments show that
+                  our fast text classifier fastText is often on par
+                  with deep learning classifiers in terms of accuracy,
+                  and many orders of magnitude faster for training and
+                  evaluation. We can train fastText on more than one
+                  billion words in less than ten minutes using a
+                  standard multicore~CPU, and classify half a million
+                  sentences among~312K classes in less than a minute.},
+  archivePrefix ={arXiv},
+  eprint =	 {1607.01759},
+  primaryClass = {cs.CL},
+  keywords =	 {fasttext,classification}
+}
+
+@article{joulin-2016-fastt,
+  author =	 {Joulin, Armand and Grave, Edouard and Bojanowski,
+                  Piotr and Douze, Matthijs and J{\'e}gou, H{\'e}rve
+                  and Mikolov, Tomas},
+  title =	 {Fasttext.zip: Compressing Text Classification
+                  Models},
+  journal =	 {CoRR},
+  year =	 2016,
+  url =		 {http://arxiv.org/abs/1612.03651v1},
+  abstract =	 {We consider the problem of producing compact
+                  architectures for text classification, such that the
+                  full model fits in a limited amount of memory.
+                  After considering different solutions inspired by
+                  the hashing literature, we propose a method built
+                  upon product quantization to store word embeddings.
+                  While the original technique leads to a loss in
+                  accuracy, we adapt this method to circumvent
+                  quantization artefacts. Our experiments carried out
+                  on several benchmarks show that our approach
+                  typically requires two orders of magnitude less
+                  memory than fastText while being only slightly
+                  inferior with respect to accuracy. As a result, it
+                  outperforms the state of the art by a good margin in
+                  terms of the compromise between memory usage and
+                  accuracy.},
+  archivePrefix ={arXiv},
+  eprint =	 {1612.03651},
+  primaryClass = {cs.CL},
+  keywords =	 {fasttext}
+}
+
+@inproceedings{kusner-2015-from,
+  title =	 {From word embeddings to document distances},
+  author =	 {Kusner, Matt and Sun, Yu and Kolkin, Nicholas and
+                  Weinberger, Kilian},
+  booktitle =	 {International conference on machine learning},
+  pages =	 {957--966},
+  year =	 2015
+}
+
+@article{mikolov-2013-distr-repres,
+  author =	 {Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and
+                  Corrado, Greg and Dean, Jeffrey},
+  title =	 {Distributed Representations of Words and Phrases and
+                  Their Compositionality},
+  journal =	 {CoRR},
+  year =	 2013,
+  url =		 {http://arxiv.org/abs/1310.4546v1},
+  abstract =	 {The recently introduced continuous Skip-gram model
+                  is an efficient method for learning high-quality
+                  distributed vector representations that capture a
+                  large number of precise syntactic and semantic word
+                  relationships. In this paper we present several
+                  extensions that improve both the quality of the
+                  vectors and the training speed. By subsampling of
+                  the frequent words we obtain significant speedup and
+                  also learn more regular word representations. We
+                  also describe a simple alternative to the
+                  hierarchical softmax called negative sampling. An
+                  inherent limitation of word representations is their
+                  indifference to word order and their inability to
+                  represent idiomatic phrases. For example, the
+                  meanings of "Canada" and "Air" cannot be easily
+                  combined to obtain "Air Canada".  Motivated by this
+                  example, we present a simple method for finding
+                  phrases in text, and show that learning good vector
+                  representations for millions of phrases is
+                  possible.},
+  archivePrefix ={arXiv},
+  eprint =	 {1310.4546v1},
+  primaryClass = {cs.CL},
+}
+
+@article{mikolov-2013-effic-estim,
+  author =	 {Mikolov, Tomas and Chen, Kai and Corrado, Greg and
+                  Dean, Jeffrey},
+  title =	 {Efficient Estimation of Word Representations in
+                  Vector Space},
+  journal =	 {CoRR},
+  year =	 2013,
+  url =		 {http://arxiv.org/abs/1301.3781v3},
+  abstract =	 {We propose two novel model architectures for
+                  computing continuous vector representations of words
+                  from very large data sets. The quality of these
+                  representations is measured in a word similarity
+                  task, and the results are compared to the previously
+                  best performing techniques based on different types
+                  of neural networks. We observe large improvements in
+                  accuracy at much lower computational cost, i.e. it
+                  takes less than a day to learn high quality word
+                  vectors from a 1.6 billion words data
+                  set. Furthermore, we show that these vectors provide
+                  state-of-the-art performance on our test set for
+                  measuring syntactic and semantic word similarities.},
+  archivePrefix ={arXiv},
+  eprint =	 {1301.3781v3},
+  primaryClass = {cs.CL},
+}
+
+@inproceedings{pennington-2014-glove,
+  author =	 {Jeffrey Pennington and Richard Socher and
+                  Christopher Manning},
+  title =	 {Glove: Global Vectors for Word Representation},
+  booktitle =	 {Proceedings of the 2014 Conference on Empirical
+                  Methods in Natural Language Processing (EMNLP)},
+  year =	 2014,
+  pages =	 {nil},
+  doi =		 {10.3115/v1/d14-1162},
+  url =		 {http://doi.org/10.3115/v1/d14-1162},
+  DATE_ADDED =	 {Wed Apr 29 22:34:00 2020},
+  month =	 {-},
+  abstract =	 {Recent methods for learning vector space
+                  representations of words have succeeded in capturing
+                  fine-grained semantic and syntactic regularities
+                  using vector arith- metic, but the origin of these
+                  regularities has remained opaque. We analyze and
+                  make explicit the model properties needed for such
+                  regularities to emerge in word vectors. The result
+                  is a new global log- bilinear regression model that
+                  combines the advantages of the two major model
+                  families in the literature: global matrix
+                  factorization and local context window methods. Our
+                  model efficiently leverages statistical information
+                  by training only on the nonzero elements in a
+                  word-word co-occurrence matrix, rather than on the
+                  en- tire sparse matrix or on individual context
+                  windows in a large corpus. The model produces a
+                  vector space with meaningful sub-structure, as
+                  evidenced by its performance of 75\% on a recent
+                  word analogy task. It also outperforms related
+                  models on similarity tasks and named entity
+                  recognition.}
+}
+
+@inproceedings{schnabel-2015-evaluat,
+  title =	 {Evaluation methods for unsupervised word embeddings},
+  author =	 {Schnabel, Tobias and Labutov, Igor and Mimno, David
+                  and Joachims, Thorsten},
+  booktitle =	 {Proceedings of the 2015 conference on empirical
+                  methods in natural language processing},
+  pages =	 {298--307},
+  year =	 2015,
+  keywords =	 {embedding,evaluate}
+}
+
+@article{radford-2018-improv,
+  title =	 {Improving language understanding by generative
+                  pre-training},
+  author =	 {Radford, Alec and Narasimhan, Karthik and Salimans,
+                  Tim and Sutskever, Ilya},
+  journal =	 {URL
+                  https://s3-us-west-2. amazonaws. com/openai-assets/researchcovers/languageunsupervised/language
+                  understanding paper. pdf},
+  year =	 2018,
+  keywords =	 {gpt}
+}
+
+@article{radford-2019-languag,
+  title =	 {Language models are unsupervised multitask learners},
+  author =	 {Radford, Alec and Wu, Jeffrey and Child, Rewon and
+                  Luan, David and Amodei, Dario and Sutskever, Ilya},
+  journal =	 {OpenAI Blog},
+  volume =	 1,
+  number =	 8,
+  pages =	 9,
+  year =	 2019,
+  keywords =	 {gpt2},
+  url =		 {https://github.com/openai/gpt-2}
+}
+
+@article{brown-2020-languag-model,
+  author =	 {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and
+                  Subbiah, Melanie and Kaplan, Jared and Dhariwal,
+                  Prafulla and Neelakantan, Arvind and Shyam, Pranav
+                  and Sastry, Girish and Askell, Amanda and Agarwal,
+                  Sandhini and Herbert-Voss, Ariel and Krueger,
+                  Gretchen and Henighan, Tom and Child, Rewon and
+                  Ramesh, Aditya and Ziegler, Daniel M. and Wu,
+                  Jeffrey and Winter, Clemens and Hesse, Christopher
+                  and Chen, Mark and Sigler, Eric and Litwin, Mateusz
+                  and Gray, Scott and Chess, Benjamin and Clark, Jack
+                  and Berner, Christopher and McCandlish, Sam and
+                  Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+  title =	 {Language Models Are Few-Shot Learners},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2005.14165v1},
+  archivePrefix ={arXiv},
+  eprint =	 {2005.14165},
+  primaryClass = {cs.CL},
+  keywords =	 {gpt3}
+}

@@ -1,0 +1,9 @@
+#+OPTIONS: ^:{}
+
+* CONTRIBUTIONS
+  1. 提出一个新的 ~generative model~
+  2. 给出了 ~word2vec~ 的一个理论证明
+  3. 解释了为何 ~low-dimensional embedding is better~
+  4. 实验论证了上述结果，尤其是词向量在空间中均匀分布
+
+* DETAILS

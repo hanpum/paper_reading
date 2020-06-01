@@ -1,0 +1,56 @@
+#+AUTHOR: hanpu.mwx
+#+OPTIONS: ^:{}
+
+* CONTRIBUTIONS
+  *SUBWORD*
+  1. 基于 ~SKIP-GRAM~ 模型
+  2. 解决 oov 问题
+  3. 提升了语法任务上的性能
+     
+  *DRAWBACKS*
+  1. 因为引入了 ~sub-word~, 训练速度比 ~word2vec~ 要慢
+
+* [0/0] DETAILS
+** model architecture
+   1. 就是一个 ~SKIP-GRAM~
+   2. ~score~ 函数如下:
+      \begin{equation*}
+	s(w,c) = \sum_{g \in \mathcal{G}_{w}} z_{g}^{T} \cdot v_{c}
+      \end{equation*}
+      
+      其中， $z_g$ 是 ~sub-word~ 对应的词向量， $v_c$ 对应 ~word2vec~
+      中的 ~output~ 向量，没有使用 ~sub-word~ 表示
+      
+** model parameters
+   1. $w_{in}$ 
+      1) 输入向量，对应每个单词的词向量
+      2) 由两部分组成
+	 - ~word vector~ : 每个单词的词向量
+	 - ~sub-word vector~: ~ngram-sub-word~ 对应的词向量，使用
+           ~hash~ 表存储，因此非一一对应
+	 - 分开存储，所以单词 ~her~ 和单词 ~where~ 的 ~sub-word: her~ 
+           使用不同的词向量进行存储，不会冲突混淆
+   2. $w_{out}$
+      输出词向量, 计算 ~loss~ 的时候用
+
+** optimization method
+   1. graident update: sgd
+   2. negative sampling: 负样本采样率为 ~uni-gram~ 平方根惩罚之后的概率
+   
+* CODE
+  1. autotune 是什么？automl？
+  2. model_name::sup
+     ~supervised~ , 用于文本分类的模型
+
+* [2/2] PROBLEMS
+** DONE 除了 subword 之外，为什么还需要使用完整的单词
+   #+BEGIN_SRC 
+   where: <wh, whe, her, ere, re>,   <where>
+   #+END_SRC
+   
+   相比于之前的 ~word2vec~ 模型, 相当于在原来的单词向量之上，增加了
+   ~sub-word~ 信息, 在计算一个 ~word~ 对应的词向量的时候，直接将向量自
+   身和 ~sub-word~ 相加之后取平均
+
+** DONE 中文如何构建 ~subword~
+   将每个字作为建模单位

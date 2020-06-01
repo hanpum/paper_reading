@@ -1,0 +1,561 @@
+@article{bengio-2003-neural-probab,
+  author =	 {Bengio, Yoshua and Ducharme, R{\'e}jean and Vincent,
+                  Pascal and Jauvin, Christian},
+  title =	 {A Neural Probabilistic Language Model},
+  journal =	 {Journal of machine learning research},
+  volume =	 3,
+  number =	 {Feb},
+  pages =	 {1137--1155},
+  year =	 2003,
+  url =
+                  {http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf},
+}
+
+@inproceedings{chen-2014-fast-accur,
+  author =	 {Danqi Chen and Christopher Manning},
+  title =	 {A Fast and Accurate Dependency Parser using Neural
+                  Networks},
+  booktitle =	 {Proceedings of the 2014 Conference on Empirical
+                  Methods in Natural Language Processing (EMNLP)},
+  abstract =	 {When a large feedforward neural network is trained
+                  on a small training set, it typically performs
+                  poorly on held-out test data. This "overfitting" is
+                  greatly reduced by randomly omitting half of the
+                  feature detectors on each training case. This
+                  prevents complex co-adaptations in which a feature
+                  detector is only helpful in the context of several
+                  other specific feature detectors.  Instead, each
+                  neuron learns to detect a feature that is generally
+                  helpful for producing the correct answer given the
+                  combinatorially large variety of internal contexts
+                  in which it must operate. Random "dropout" gives big
+                  improvements on many benchmark tasks and sets new
+                  records for speech and object recognition.},
+  year =	 2014,
+  pages =	 {nil},
+  doi =		 {10.3115/v1/d14-1082},
+  url =		 {https://doi.org/10.3115/v1/d14-1082},
+  DATE_ADDED =	 {Thu May 21 20:10:50 2020},
+  month =	 {-},
+  keywords =	 {nn-parser}
+}
+
+@article{devlin-2018-bert,
+  key =		 {bert},
+  author =	 {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton
+                  and Toutanova, Kristina},
+  title =	 {Bert: Pre-Training of Deep Bidirectional
+                  Transformers for Language Understanding},
+  journal =	 {CoRR},
+  year =	 2018,
+  url =		 {http://arxiv.org/abs/1810.04805v2},
+  abstract =	 {We introduce a new language representation model
+                  called BERT, which stands for Bidirectional Encoder
+                  Representations from Transformers. Unlike recent
+                  language representation models, BERT is designed to
+                  pre-train deep bidirectional representations from
+                  unlabeled text by jointly conditioning on both left
+                  and right context in all layers. As a result, the
+                  pre-trained BERT model can be fine-tuned with just
+                  one additional output layer to create
+                  state-of-the-art models for a wide range of tasks,
+                  such as question answering and language inference,
+                  without substantial task-specific architecture
+                  modifications.  BERT is conceptually simple and
+                  empirically powerful. It obtains new
+                  state-of-the-art results on eleven natural language
+                  processing tasks, including pushing the GLUE score
+                  to 80.5 \% (7.7 \% point absolute improvement),
+                  MultiNLI accuracy to 86.7 \% (4.6 \% absolute
+                  improvement), SQuAD v1.1 question answering Test F1
+                  to 93.2 (1.5 point absolute improvement) and SQuAD
+                  v2.0 Test F1 to 83.1 (5.1 point absolute
+                  improvement).},
+  archivePrefix ={arXiv},
+  eprint =	 {1810.04805},
+  primaryClass = {cs.CL},
+}
+
+@article{dyer-2014-notes-noise,
+  author =	 {Dyer, Chris},
+  title =	 {Notes on Noise Contrastive Estimation and Negative
+                  Sampling},
+  journal =	 {CoRR},
+  year =	 2014,
+  url =		 {http://arxiv.org/abs/1410.8251v1},
+  abstract =	 {Estimating the parameters of probabilistic models of
+                  language such as maxent models and probabilistic
+                  neural models is computationally difficult since it
+                  involves evaluating partition functions by summing
+                  over an entire vocabulary, which may be millions of
+                  word types in size. Two closely related
+                  strategies---noise contrastive estimation (Mnih and
+                  Teh, 2012; Mnih and Kavukcuoglu, 2013; Vaswani et
+                  al., 2013) and negative sampling (Mikolov et al.,
+                  2012; Goldberg and Levy, 2014)---have emerged as
+                  popular solutions to this computational problem, but
+                  some confusion remains as to which is more
+                  appropriate and when. This document explicates their
+                  relationships to each other and to other estimation
+                  techniques. The analysis shows that, although they
+                  are superficially similar, NCE is a general
+                  parameter estimation technique that is
+                  asymptotically unbiased, while negative sampling is
+                  best understood as a family of binary classification
+                  models that are useful for learning word
+                  representations but not as a general-purpose
+                  estimator.},
+  archivePrefix ={arXiv},
+  eprint =	 {1410.8251},
+  primaryClass = {cs.LG},
+  keywords =	 {NCE,note},
+}
+
+@article{gutmann-2012-noise-contr,
+  author =	 {Gutmann, Michael U and Hyv{\"a}rinen, Aapo},
+  title =	 {Noise-Contrastive Estimation of Unnormalized
+                  Statistical Models, With Applications To Natural
+                  Image Statistics},
+  journal =	 {Journal of Machine Learning Research},
+  volume =	 13,
+  number =	 {Feb},
+  pages =	 {307--361},
+  year =	 2012,
+  keywords =	 {NCE,raw},
+}
+
+@article{hinton-2012-improv-neural,
+  author =	 {Hinton, Geoffrey E. and Srivastava, Nitish and
+                  Krizhevsky, Alex and Sutskever, Ilya and
+                  Salakhutdinov, Ruslan R.},
+  title =	 {Improving Neural Networks By Preventing
+                  Co-Adaptation of Feature Detectors},
+  journal =	 {CoRR},
+  year =	 2012,
+  url =		 {http://arxiv.org/abs/1207.0580v1},
+  abstract =	 {When a large feedforward neural network is trained
+                  on a small training set, it typically performs
+                  poorly on held-out test data. This "overfitting" is
+                  greatly reduced by randomly omitting half of the
+                  feature detectors on each training case. This
+                  prevents complex co-adaptations in which a feature
+                  detector is only helpful in the context of several
+                  other specific feature detectors.  Instead, each
+                  neuron learns to detect a feature that is generally
+                  helpful for producing the correct answer given the
+                  combinatorially large variety of internal contexts
+                  in which it must operate. Random "dropout" gives big
+                  improvements on many benchmark tasks and sets new
+                  records for speech and object recognition.},
+  archivePrefix ={arXiv},
+  eprint =	 {1207.0580},
+  primaryClass = {cs.NE},
+  keywords =	 {dropout}
+}
+
+@article{ji-2020-survey-knowl-graph,
+  author =	 {Ji, Shaoxiong and Pan, Shirui and Cambria, Erik and
+                  Marttinen, Pekka and Yu, Philip S.},
+  title =	 {A Survey on Knowledge Graphs: Representation,
+                  Acquisition and Applications},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2002.00388v1},
+  abstract =	 {Human knowledge provides a formal understanding of
+                  the world. Knowledge graphs that represent
+                  structural relations between entities have become an
+                  increasingly popular research direction towards
+                  cognition and human-level intelligence. In this
+                  survey, we provide a comprehensive review on
+                  knowledge graph covering overall research topics
+                  about 1) knowledge graph representation learning, 2)
+                  knowledge acquisition and completion, 3) temporal
+                  knowledge graph, and 4) knowledge-aware
+                  applications, and summarize recent breakthroughs and
+                  perspective directions to facilitate future
+                  research. We propose a full-view categorization and
+                  new taxonomies on these topics. Knowledge graph
+                  embedding is organized from four aspects of
+                  representation space, scoring function, encoding
+                  models and auxiliary information. For knowledge
+                  acquisition, especially knowledge graph completion,
+                  embedding methods, path inference and logical rule
+                  reasoning are reviewed. We further explore several
+                  emerging topics including meta relational learning,
+                  commonsense reasoning, and temporal knowledge
+                  graphs.  To facilitate future research on knowledge
+                  graphs, we also provide a curated collection of
+                  datasets and open-source libraries on different
+                  tasks. In the end, we have a thorough outlook on
+                  several promising research directions.},
+  archivePrefix ={arXiv},
+  eprint =	 {2002.00388},
+  primaryClass = {cs.CL},
+  tags =	 {KG}
+}
+
+@article{khan-2019-survey-recen,
+  author =	 {Khan, Asifullah and Sohail, Anabia and Zahoora, Umme
+                  and Qureshi, Aqsa Saeed},
+  title =	 {A Survey of the Recent Architectures of Deep
+                  Convolutional Neural Networks},
+  journal =	 {CoRR},
+  year =	 2019,
+  url =		 {http://arxiv.org/abs/1901.06032v6},
+  abstract =	 {Deep Convolutional Neural Network (CNN) is a special
+                  type of Neural Networks, which has shown exemplary
+                  performance on several competitions related to
+                  Computer Vision and Image Processing. Some of the
+                  exciting application areas of CNN include Image
+                  Classification and Segmentation, Object Detection,
+                  Video Processing, Natural Language Processing, and
+                  Speech Recognition. The powerful learning ability of
+                  deep CNN is primarily due to the use of multiple
+                  feature extraction stages that can automatically
+                  learn representations from the data.  The
+                  availability of a large amount of data and
+                  improvement in the hardware technology has
+                  accelerated the research in CNNs, and recently
+                  interesting deep CNN architectures have been
+                  reported. Several inspiring ideas to bring
+                  advancements in CNNs have been explored, such as the
+                  use of different activation and loss functions,
+                  parameter optimization, regularization, and
+                  architectural innovations. However, the significant
+                  improvement in the representational capacity of the
+                  deep CNN is achieved through architectural
+                  innovations. Notably, the ideas of exploiting
+                  spatial and channel information, depth and width of
+                  architecture, and multi-path information processing
+                  have gained substantial attention. Similarly, the
+                  idea of using a block of layers as a structural unit
+                  is also gaining popularity. This survey thus focuses
+                  on the intrinsic taxonomy present in the recently
+                  reported deep CNN architectures and, consequently,
+                  classifies the recent innovations in CNN
+                  architectures into seven different categories. These
+                  seven categories are based on spatial exploitation,
+                  depth, multi-path, width, feature-map exploitation,
+                  channel boosting, and attention. Additionally, the
+                  elementary understanding of CNN components, current
+                  challenges, and applications of CNN are also
+                  provided.},
+  archivePrefix ={arXiv},
+  eprint =	 {1901.06032},
+  primaryClass = {cs.CV},
+}
+
+@article{klambauer-2017-self-normal,
+  author =	 {Klambauer, G{\"u}nter and Unterthiner, Thomas and
+                  Mayr, Andreas and Hochreiter, Sepp},
+  title =	 {Self-Normalizing Neural Networks},
+  journal =	 {CoRR},
+  year =	 2017,
+  url =		 {http://arxiv.org/abs/1706.02515v5},
+  abstract =	 {Deep Learning has revolutionized vision via
+                  convolutional neural networks (CNNs) and natural
+                  language processing via recurrent neural networks
+                  (RNNs).  However, success stories of Deep Learning
+                  with standard feed-forward neural networks (FNNs)
+                  are rare. FNNs that perform well are typically
+                  shallow and, therefore cannot exploit many levels of
+                  abstract representations. We introduce
+                  self-normalizing neural networks (SNNs) to enable
+                  high-level abstract representations. While batch
+                  normalization requires explicit normalization,
+                  neuron activations of SNNs automatically converge
+                  towards zero mean and unit variance. The activation
+                  function of SNNs are "scaled exponential linear
+                  units" (SELUs), which induce self-normalizing
+                  properties. Using the Banach fixed-point theorem, we
+                  prove that activations close to zero mean and unit
+                  variance that are propagated through many network
+                  layers will converge towards zero mean and unit
+                  variance -- even under the presence of noise and
+                  perturbations. This convergence property of SNNs
+                  allows to (1) train deep networks with many layers,
+                  (2) employ strong regularization, and (3) to make
+                  learning highly robust. Furthermore, for activations
+                  not close to unit variance, we prove an upper and
+                  lower bound on the variance, thus, vanishing and
+                  exploding gradients are impossible. We compared SNNs
+                  on (a) 121 tasks from the UCI machine learning
+                  repository, on (b) drug discovery benchmarks, and on
+                  (c) astronomy tasks with standard FNNs and other
+                  machine learning methods such as random forests and
+                  support vector machines. SNNs significantly
+                  outperformed all competing FNN methods at 121 UCI
+                  tasks, outperformed all competing methods at the
+                  Tox21 dataset, and set a new record at an astronomy
+                  data set. The winning SNN architectures are often
+                  very deep. Implementations are available at:
+                  github.com/bioinf-jku/SNNs.},
+  archivePrefix ={arXiv},
+  eprint =	 {1706.02515},
+  primaryClass = {cs.LG},
+}
+
+@article{liu-2019-k-bert,
+  author =	 {Liu, Weijie and Zhou, Peng and Zhao, Zhe and Wang,
+                  Zhiruo and Ju, Qi and Deng, Haotang and Wang, Ping},
+  title =	 {K-Bert: Enabling Language Representation With
+                  Knowledge Graph},
+  journal =	 {CoRR},
+  year =	 2019,
+  url =		 {http://arxiv.org/abs/1909.07606v1},
+  abstract =	 {Pre-tr BERT, capture a general language
+                  representation from large-scale corpora, but lack
+                  domain-specific knowledge. When reading a domain
+                  text, experts make inferences with relevant
+                  knowledge. For machines to achieve this capability,
+                  we propose a knowledge-enabled language
+                  representation model (K-BERT) with knowledge graphs
+                  (KGs), in which triples are injected into the
+                  sentences as domain knowledge.  However, too much
+                  knowledge incorporation may divert the sentence from
+                  its correct meaning, which is called knowledge noise
+                  (KN) issue. To overcome KN, K-BERT introduces
+                  soft-position and visible matrix to limit the impact
+                  of knowledge. K-BERT can easily inject domain
+                  knowledge into the models by equipped with a KG
+                  without pre-training by-self because it is capable
+                  of loading model parameters from the pre-trained
+                  BERT. Our investigation reveals promising results in
+                  twelve NLP tasks. Especially in domain-specific
+                  tasks (including finance, law, and medicine), K-BERT
+                  significantly outperforms BERT, which demonstrates
+                  that K-BERT is an excellent choice for solving the
+                  knowledge-driven problems that require experts.},
+  archivePrefix ={arXiv},
+  eprint =	 {1909.07606},
+  primaryClass = {cs.CL},
+}
+
+@article{mnih-2012-fast-simpl,
+  author =	 {Mnih, Andriy and Teh, Yee Whye},
+  title =	 {A Fast and Simple Algorithm for Training Neural
+                  Probabilistic Language Models},
+  journal =	 {CoRR},
+  year =	 2012,
+  url =		 {http://arxiv.org/abs/1206.6426v1},
+  abstract =	 {In spite of their superior performance, neural
+                  probabilistic language models (NPLMs) remain far
+                  less widely used than n-gram models due to their
+                  notoriously long training times, which are measured
+                  in weeks even for moderately-sized
+                  datasets. Training NPLMs is computationally
+                  expensive because they are explicitly normalized,
+                  which leads to having to consider all words in the
+                  vocabulary when computing the log-likelihood
+                  gradients.  We propose a fast and simple algorithm
+                  for training NPLMs based on noise-contrastive
+                  estimation, a newly introduced procedure for
+                  estimating unnormalized continuous distributions. We
+                  investigate the behaviour of the algorithm on the
+                  Penn Treebank corpus and show that it reduces the
+                  training times by more than an order of magnitude
+                  without affecting the quality of the resulting
+                  models. The algorithm is also more efficient and
+                  much more stable than importance sampling because it
+                  requires far fewer noise samples to perform well.
+                  We demonstrate the scalability of the proposed
+                  approach by training several neural language models
+                  on a 47M-word corpus with a 80K-word vocabulary,
+                  obtaining state-of-the-art results on the Microsoft
+                  Research Sentence Completion Challenge dataset.},
+  archivePrefix ={arXiv},
+  eprint =	 {1206.6426},
+  primaryClass = {cs.CL},
+  keywords =	 {NCE,lm}
+}
+
+@article{mueller-2019-when-does,
+  author =	 {M{\"u}ller, Rafael and Kornblith, Simon and Hinton,
+                  Geoffrey},
+  title =	 {When Does Label Smoothing Help?},
+  journal =	 {CoRR},
+  year =	 2019,
+  url =		 {http://arxiv.org/abs/1906.02629v2},
+  abstract =	 {The generalization and learning speed of a
+                  multi-class neural network can often be
+                  significantly improved by using soft targets that
+                  are a weighted average of the hard targets and the
+                  uniform distribution over labels. Smoothing the
+                  labels in this way prevents the network from
+                  becoming over-confident and label smoothing has been
+                  used in many state-of-the-art models, including
+                  image classification, language translation and
+                  speech recognition. Despite its widespread use,
+                  label smoothing is still poorly understood. Here we
+                  show empirically that in addition to improving
+                  generalization, label smoothing improves model
+                  calibration which can significantly improve
+                  beam-search.  However, we also observe that if a
+                  teacher network is trained with label smoothing,
+                  knowledge distillation into a student network is
+                  much less effective. To explain these observations,
+                  we visualize how label smoothing changes the
+                  representations learned by the penultimate layer of
+                  the network. We show that label smoothing encourages
+                  the representations of training examples from the
+                  same class to group in tight clusters. This results
+                  in loss of information in the logits about
+                  resemblances between instances of different classes,
+                  which is necessary for distillation, but does not
+                  hurt generalization or calibration of the model's
+                  predictions.},
+  archivePrefix ={arXiv},
+  eprint =	 {1906.02629},
+  primaryClass = {cs.LG},
+}
+
+
+@article{qiu-2020-pre-train,
+  author =	 {Qiu, Xipeng and Sun, Tianxiang and Xu, Yige and
+                  Shao, Yunfan and Dai, Ning and Huang, Xuanjing},
+  title =	 {Pre-Trained Models for Natural Language Processing:
+                  a Survey},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2003.08271v3},
+  abstract =	 {Recently, the emergence of pre-trained models (PTMs)
+                  has brought natural language processing (NLP) to a
+                  new era. In this survey, we provide a comprehensive
+                  review of PTMs for NLP. We first briefly introduce
+                  language representation learning and its research
+                  progress. Then we systematically categorize existing
+                  PTMs based on a taxonomy with four
+                  perspectives. Next, we describe how to adapt the
+                  knowledge of PTMs to the downstream tasks. Finally,
+                  we outline some potential directions of PTMs for
+                  future research. This survey is purposed to be a
+                  hands-on guide for understanding, using, and
+                  developing PTMs for various NLP tasks.},
+  archivePrefix ={arXiv},
+  eprint =	 {2003.08271},
+  primaryClass = {cs.CL},
+}
+
+@article{roller-2020-recip-build,
+  author =	 {Roller, Stephen and Dinan, Emily and Goyal, Naman
+                  and Ju, Da and Williamson, Mary and Liu, Yinhan and
+                  Xu, Jing and Ott, Myle and Shuster, Kurt and Smith,
+                  Eric M. and Boureau, Y-Lan and Weston, Jason},
+  title =	 {Recipes for Building an Open-Domain Chatbot},
+  journal =	 {CoRR},
+  year =	 2020,
+  url =		 {http://arxiv.org/abs/2004.13637v2},
+  abstract =	 {Building open-domain chatbots is a challenging area
+                  for machine learning research. While prior work has
+                  shown that scaling neural models in the number of
+                  parameters and the size of the data they are trained
+                  on gives improved results, we show that other
+                  ingredients are important for a high-performing
+                  chatbot. Good conversation requires a number of
+                  skills that an expert conversationalist blends in a
+                  seamless way: providing engaging talking points and
+                  listening to their partners, and displaying
+                  knowledge, empathy and personality appropriately,
+                  while maintaining a consistent persona. We show that
+                  large scale models can learn these skills when given
+                  appropriate training data and choice of generation
+                  strategy. We build variants of these recipes with
+                  90M, 2.7B and 9.4B parameter models, and make our
+                  models and code publicly available. Human
+                  evaluations show our best models are superior to
+                  existing approaches in multi-turn dialogue in terms
+                  of engagingness and humanness measurements. We then
+                  discuss the limitations of this work by analyzing
+                  failure cases of our models.},
+  archivePrefix ={arXiv},
+  eprint =	 {2004.13637},
+  primaryClass = {cs.CL},
+}
+
+@article{vaswani-2017-atten-is,
+  author =	 {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki
+                  and Uszkoreit, Jakob and Jones, Llion and Gomez,
+                  Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+  title =	 {Attention Is All You Need},
+  journal =	 {CoRR},
+  year =	 2017,
+  url =		 {http://arxiv.org/abs/1706.03762v5},
+  abstract =	 {The dominant sequence transduction models are based
+                  on complex recurrent or convolutional neural
+                  networks in an encoder-decoder configuration. The
+                  best performing models also connect the encoder and
+                  decoder through an attention mechanism. We propose a
+                  new simple network architecture, the Transformer,
+                  based solely on attention mechanisms, dispensing
+                  with recurrence and convolutions
+                  entirely. Experiments on two machine translation
+                  tasks show these models to be superior in quality
+                  while being more parallelizable and requiring
+                  significantly less time to train. Our model achieves
+                  28.4 BLEU on the WMT 2014 English-to-German
+                  translation task, improving over the existing best
+                  results, including ensembles by over 2 BLEU. On the
+                  WMT 2014 English-to-French translation task, our
+                  model establishes a new single-model
+                  state-of-the-art BLEU score of 41.8 after training
+                  for 3.5 days on eight GPUs, a small fraction of the
+                  training costs of the best models from the
+                  literature. We show that the Transformer generalizes
+                  well to other tasks by applying it successfully to
+                  English constituency parsing both with large and
+                  limited training data.},
+  archivePrefix ={arXiv},
+  eprint =	 {1706.03762},
+  primaryClass = {cs.CL},
+}
+
+@article{wang-2017-knowl-graph-embed,
+  author =	 {Quan Wang and Zhendong Mao and Bin Wang and Li Guo},
+  title =	 {Knowledge Graph Embedding: a Survey of Approaches
+                  and Applications},
+  journal =	 {IEEE Transactions on Knowledge and Data Engineering},
+  volume =	 29,
+  number =	 12,
+  pages =	 {2724-2743},
+  year =	 2017,
+  doi =		 {10.1109/tkde.2017.2754499},
+  url =		 {https://doi.org/10.1109/tkde.2017.2754499},
+  DATE_ADDED =	 {Fri May 8 15:54:10 2020},
+}
+
+@inproceedings{wu-2020-autom-class,
+  author =	 {Wu, Jason and Harrison, Chris and Bigham, Jeffrey P
+                  and Laput, Gierad},
+  title =	 {Automated Class Discovery and One-Shot Interactions
+                  for Acoustic Activity Recognition},
+  booktitle =	 {Proceedings of the 2020 CHI Conference on Human
+                  Factors in Computing Systems},
+  year =	 2020,
+  pages =	 {1--14},
+  doi =		 {10.1145/3313831.3376875},
+  url =		 {https://doi.org/10.1145/3313831.3376875},
+  abstract =	 {Acoustic activity recognition has emerged as a
+                  foundational element for imbuing devices with
+                  context-driven capabilities, enabling richer, more
+                  assistive, and more accommodating computational
+                  experiences. Traditional approaches rely either on
+                  custom models trained in situ, or general models
+                  pre- trained on preexisting data, with each approach
+                  having accu- racy and user burden implications. We
+                  present Listen Learner, a technique for activity
+                  recognition that gradually learns events specific to
+                  a deployed environment while minimizing user
+                  burden. Specifically, we built an end-to-end system
+                  for self-supervised learning of events labelled
+                  through one-shot interaction. We describe and
+                  quantify system performance 1) on preexisting audio
+                  datasets, 2) on real-world datasets we col- lected,
+                  and 3) through user studies which uncovered system
+                  behaviors suitable for this new type of
+                  interaction. Our results show that our system can
+                  accurately and automatically learn acoustic events
+                  across environments (e.g., 97 \% precision, 87 \%
+                  recall), while adhering to users' preferences for
+                  non-intrusive interactive behavior.  },
+  tag =		 {todo},
+}

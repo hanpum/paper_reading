@@ -1,0 +1,12 @@
+* CONTRIBuTIONS
+  1. 接着16年的 paper, 在 ~Lantent Variables Generative Model~ 的基础
+     上提出了 ~sentence embeddings~ 技术
+     - 加权平均 $\frac{a}{p(w)+a}, a = \frac{1-\alpha}{\alpha \cdot Z}$
+     - 通过 $SVD$ 移除 ~common component~
+  2. 给出了完整的数学解释
+  3. 论证了该加权平均方法和 ~word2vec~ 中的 ~sub-sampling~ 技术等价
+  4. 上述两个点可以和任何其他的方式训练得到的 ~embedding~ 组合使用, 效
+     果要好于简单求平均，或者是复杂的 ~NN model~
+     
+* [0/1] PROBLEMS
+** TODO partition function Z 怎么计算?
